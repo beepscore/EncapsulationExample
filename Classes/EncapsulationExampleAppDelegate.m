@@ -19,7 +19,7 @@
 {    
     // Override point for customization after application launch
     [window makeKeyAndVisible];
-    
+
     
     squidward = [[KrustyKrabEmployee alloc] init];
     
@@ -28,7 +28,7 @@
     
     // Attempting to access the instance variable using pointer operator '->' gives error:
     // Instance variable 'krabbyPattySecretFormula' is declared protected
-    // NSLog(@"[squidward krabbyPattySecretFormula] = %@", squidward->krabbyPattySecretFormula);
+    // NSLog(@"squidward->krabbyPattySecretFormula = %@", squidward->krabbyPattySecretFormula);
     
     NSLog(@"[squidward chumBucketLocation] = %@", [squidward chumBucketLocation]);  
     
@@ -52,6 +52,5 @@
     
     [super dealloc];
 }
-
 
 @end
