@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class KrustyKrabEmployee;
+@class SpongeBob;
 
 @interface EncapsulationExampleAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+    
+    KrustyKrabEmployee* squidward;
+    
+    // SpongeBob is a subclass of KrustyKrabEmployee
+    SpongeBob *spongeBob;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
