@@ -12,14 +12,15 @@
 @implementation KrustyKrabEmployee
 
 #pragma mark Properties
-// synthesize will generate a getter and setter accessor method, part of the object's behavior
+// synthesize generates a getter and setter accessor method, part of the object's behavior
 @synthesize chumBucketLocation;
 
 
 - (id)init
 {
     self = [super init];
-    if (self) {
+    if (self) 
+    {
         krabbyPattySecretFormula = @"love";
         chumBucketLocation = @"acrossTheStreet";
         pickleColor = @"green";
@@ -27,13 +28,13 @@
     return self;
 }
 
+
 #pragma mark Memory management
-- (void)dealloc {    
+- (void)dealloc
+{    
     [chumBucketLocation release];
-    chumBucketLocation = nil;
     
     [super dealloc];
 }
-
 
 @end
